@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: "Quicksand", sans-serif;
     margin: 0;
 }
@@ -21,7 +21,7 @@ header {
 
 #page-logo a {
     padding: 10px;
-    font-family: "Oleo Script" , sans-serif;
+    font-family: "Oleo Script", sans-serif;
     color: rgb(245, 243, 160);
     font-size: 50px;
     text-decoration: none;
@@ -59,7 +59,6 @@ footer {
 footer ul {
    display: flex; 
    justify-content: center;
-
 }
 
 footer li {
