@@ -3,72 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Travel Goals</title>
+  <title>Travel Explorer</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="shared.css">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <div id="page-logo">
-      <a href="index.html">Travel Goals</a>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">Travel Explorer</a>
+      </div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburger for mobile -->
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </div>
-    <nav>
-      <ul id="nav-menu">
-        <li><a href="places.html">Destinations</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <!-- Hamburger for mobile -->
-      <div id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
   </header>
-  <main>
-    <!-- Hero Section with Slider -->
-    <section id="hero">
-      <div id="hero-content">
-        <h1>Joe's Travel Page</h1>
-        <p>Let's explore the world together</p>
-        <a href="places.html">Discover places</a>
-      </div>
-    </section>
-    <!-- Highlights Section -->
+
+  <!-- Hero Section with Slider -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Discover the World</h1>
+      <p>Embark on adventures and explore new horizons.</p>
+      <a href="destinations.html" class="cta-btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Main Content: Highlights -->
+  <main class="container">
     <section id="highlights">
-      <h2>Highlights</h2>
-      <ul id="destinations">
-        <li class="destination">
-          <img src="images/places/miami.jpg" alt="Miami streets on sunny day">
-          <p>Miami <strong>USA</strong></p>
-        </li>
-        <li class="destination">
-          <img src="images/places/munich.jpg" alt="Munich stadium in winter">
-          <p>Munich <strong>Germany</strong></p>
-        </li>
-        <li class="destination">
-          <img src="images/places/barcelona.jpg" alt="Palm beach in Barcelona">
-          <p>Barcelona <strong>Spain</strong></p>
-        </li>
-      </ul>
+      <h2>Top Destinations</h2>
+      <div class="destinations-grid">
+        <div class="destination">
+          <img src="images/destinations/paris.jpg" alt="Paris">
+          <h3>Paris</h3>
+          <p>The city of lights and romance.</p>
+        </div>
+        <div class="destination">
+          <img src="images/destinations/tokyo.jpg" alt="Tokyo">
+          <h3>Tokyo</h3>
+          <p>A vibrant mix of tradition and modernity.</p>
+        </div>
+        <div class="destination">
+          <img src="images/destinations/miami.jpg" alt="Miami">
+          <h3>Miami</h3>
+          <p>Sunny beaches and lively nightlife.</p>
+        </div>
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
-    <ul>
-      <li>
-        <a href="https://www.instagram.com">
-          <img src="images/icons/insta.png" alt="Instagram logo">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com">
-          <img src="images/icons/facebook.png" alt="Facebook logo">
-        </a>
-      </li>
-    </ul>
+    <div class="container footer-container">
+      <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+    </div>
   </footer>
+
   <!-- External JavaScript -->
   <script src="script.js"></script>
 </body>
