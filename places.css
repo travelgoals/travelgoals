@@ -1,4 +1,4 @@
-body { 
+body {
     background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
     color: rgb(68, 68, 68);
 }
@@ -16,7 +16,7 @@ header a {
 }
 
 header nav a:hover {
-    background-color: rgb(183, 230, 235);
+    background-color:rgb(183, 230, 235);
     color: rgb(59, 59, 59);
 }
 
@@ -29,16 +29,25 @@ main ul {
 }
 
 li:nth-of-type(3) {
-    grid-column: 1 / span 2;
-}
+    grid-column:1 / span 2
+  }
 
 main li {
     display: flex;
     background-color: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px, 1px, 4px, rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     overflow: hidden;
 }
+
+  
+
+/* .actions {
+    display: flex;
+    margin: auto;
+    justify-content: end;
+} */
+
 
 main li img {
     width: 300px;
@@ -68,6 +77,6 @@ main li img {
     border-radius: 5px;
 }
 
-.actions a:hover {
+.actions a :hover {
     background-color: rgb(235, 253, 255);
 }
